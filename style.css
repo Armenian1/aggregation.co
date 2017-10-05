@@ -1,47 +1,55 @@
-@media only screen and (min-width: 480px) {
-	body { max-width: 640px; }
-}
+//@media only screen and (min-width: 480px) {
+//	body { max-width: 640px; }
+//}
 
 body {
 	width: 100%;
 	margin: 0 auto;
-	background-color: #fffff8;
+	background-color: #42eef4;
 	font-family: "Archivo Narrow";
-	font-size: 11pt;
+	font-size: 14pt;
 	text-decoration: none;
 }
 
 /* include/nav.php */
 nav {
-	margin-top: 16px;
-	font-size: larger;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 34px;
 }
 
 nav span {
-	margin-right: 24px;
+	margin-right: 50px;
 }
 
 /* index.php */
 #content {
 	clear: left;
-	margin-top: 16px;
+	margin-top: 22px;
 }
 
 #content-left {
 	float: left;
-	width: 31%;
+	width: 20%;
+	margin-left: 7%;
+	border: 3px solid green;
+	padding: 25px;
 }
 
 #content-middle {
 	float: left;
-	width: 31%;
-	margin-left: 3.5%;
+	width: 20%;
+	margin-left: 7%;
+	border: 3px solid green;
+	padding: 25px;
 }
 
 #content-right {
 	float: left;
-	width: 31%;
-	margin-left: 3.5%;
+	width: 20%;
+	margin-left: 7%;
+	border: 3px solid green;
+	padding: 25px;
 }
 
 .itemSep {
@@ -51,6 +59,7 @@ nav span {
 .feedIcon {
 	float: left;
 	margin-top: 4px;
+	font-size: 20px;
 }
 
 .feedTitle {
@@ -77,6 +86,12 @@ nav span {
 	margin-top: 16px;
 	font-style: normal;
 	font-weight: bold;
+}
+
+.itemImage {
+	clear: left;
+	margin-top: 16px;
+	font-size: larger;
 }
 
 .itemDesc {

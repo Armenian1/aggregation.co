@@ -101,6 +101,7 @@ function LoadCachedItems($items)
 		$itemPubDate = $row['itemPubDate'];
 		$itemLink = $row['itemLink'];
 		$itemDesc = $row['itemDesc'];
+		$imageURL = $row['imageURL'];
 
 		$item = array(
 			"id" => $id,
@@ -109,7 +110,8 @@ function LoadCachedItems($items)
 			"itemTitle" => $itemTitle,
 			"itemPubDate" => $itemPubDate,
 			"itemLink" => $itemLink,
-			"itemDesc" => $itemDesc);
+			"itemDesc" => $itemDesc,
+			"imageURL" => $imageURL);
 
 		array_push($rssItems, $item);
 	}

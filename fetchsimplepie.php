@@ -61,7 +61,7 @@ foreach ($rows as $feed) {
 			if ($item->get_title() == NULL) {
 
 			$insertquery =
-				"INSERT INTO items (id,feedTitle,feedLink,itemPubDate,itemLink,itemDesc) VALUES (" .
+				"INSERT INTO items (id,feedTitle,feedLink,itemPubDate,itemLink,itemDesc,imageURL) VALUES (" .
 				$feed['id'] . ",'" . 
 				$item->get_feed()->get_title() .
 				"','" .
@@ -72,12 +72,14 @@ foreach ($rows as $feed) {
 				$item->get_permalink() .
 				"','" .
 				RemoveLinks($item->get_description()) .
+				"','" .
+				$item->get_enclosure()->get_link() .
 				"')";
 
 			} else {
 
 			$insertquery =
-				"INSERT INTO items (id,feedTitle,feedLink,itemTitle,itemPubDate,itemLink,itemDesc) VALUES (" .
+				"INSERT INTO items (id,feedTitle,feedLink,itemTitle,itemPubDate,itemLink,itemDesc,imageURL) VALUES (" .
 				$feed['id'] . ",'" . 
 				$item->get_feed()->get_title() .
 				"','" .
@@ -90,6 +92,8 @@ foreach ($rows as $feed) {
 				$item->get_permalink() .
 				"','" .
 				RemoveLinks($item->get_description()) .
+				"','" .
+				$item->get_enclosure()->get_link() .
 				"')";
 
 			}
